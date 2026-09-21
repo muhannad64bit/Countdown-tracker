@@ -1,0 +1,17 @@
+{
+  "name": "operation-tracker",
+  "version": "1.0.0",
+  "description": "An 8-month gamified visual countdown tracker (35-week operation log) with a terminal/black-ops aesthetic.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "license": "MIT"
+}

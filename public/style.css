@@ -1,0 +1,540 @@
+/* =================================================================
+   OPERATION LOGBOOK — Apple-inspired clean design
+   Palette: warm white, soft grays, calm blue accent.
+   Type:    Inter / system stack for that native Apple feel.
+   ================================================================= */
+
+:root {
+  --bg:          #f5f5f7;
+  --surface:     #ffffff;
+  --surface-2:   #fafafa;
+  --border:      #e5e5ea;
+  --border-soft: #f0f0f2;
+
+  --accent:      #007aff;
+  --accent-soft: #409cff;
+  --accent-dim:  #b3d7ff;
+  --accent-bg:   rgba(0, 122, 255, 0.06);
+
+  --green:       #34c759;
+  --green-soft:  rgba(52, 199, 89, 0.08);
+  --green-dim:   rgba(52, 199, 89, 0.15);
+
+  --text:        #1d1d1f;
+  --text-2:      #6e6e73;
+  --text-3:      #aeaeb2;
+
+  --danger:      #ff3b30;
+
+  --radius:      12px;
+  --radius-sm:   8px;
+  --radius-xs:   6px;
+  --shadow:      0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-lg:   0 2px 8px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --font:        'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---------------------------------------------------------------
+   Dark mode (auto 6 PM – 6 AM), smooth transition
+   --------------------------------------------------------------- */
+
+body.dark {
+  --bg:          #1c1c1e;
+  --surface:     #2c2c2e;
+  --surface-2:   #3a3a3c;
+  --border:      #48484a;
+  --border-soft: #38383a;
+
+  --accent:      #0a84ff;
+  --accent-soft: #409cff;
+  --accent-dim:  #1a3a5c;
+  --accent-bg:   rgba(10, 132, 255, 0.1);
+
+  --green:       #30d158;
+  --green-soft:  rgba(48, 209, 88, 0.1);
+  --green-dim:   rgba(48, 209, 88, 0.2);
+
+  --text:        #f5f5f7;
+  --text-2:      #a1a1a6;
+  --text-3:      #636366;
+
+  --danger:      #ff453a;
+
+  --shadow:      0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+  --shadow-lg:   0 2px 8px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+::selection { background: var(--accent-dim); color: var(--text); }
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ---------------------------------------------------------------
+   Header
+   --------------------------------------------------------------- */
+
+.dossier-header {
+  background: var(--surface);
+  padding: 32px clamp(20px, 4vw, 40px) 36px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  transition: background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--surface-2);
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+/* Milestone tag color shifts */
+.tag.milestone-quarter {
+  color: var(--accent);
+  border-color: var(--accent-dim);
+  background: var(--accent-bg);
+}
+
+.tag.milestone-half {
+  color: #ff9500;
+  border-color: rgba(255, 149, 0, 0.25);
+  background: rgba(255, 149, 0, 0.06);
+}
+
+.tag.milestone-three-quarter {
+  color: #af52de;
+  border-color: rgba(175, 82, 222, 0.25);
+  background: rgba(175, 82, 222, 0.06);
+}
+
+.tag.milestone-done {
+  color: var(--green);
+  border-color: var(--green-dim);
+  background: var(--green-soft);
+}
+
+.tag--live {
+  color: var(--text-2);
+  border-color: var(--border);
+  background: var(--surface-2);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.subhead {
+  margin: 0 0 24px;
+  color: var(--text-2);
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-block {
+  background: var(--surface-2);
+  border: 1px solid var(--border-soft);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: box-shadow 0.2s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.stat-block:hover {
+  box-shadow: var(--shadow);
+}
+
+.stat-value {
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-3);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.progress-shell {
+  position: relative;
+  height: 8px;
+  border: none;
+  background: var(--border-soft);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  transition: width 0.6s cubic-bezier(.25, .8, .25, 1);
+  border-radius: 100px;
+}
+
+.progress-ticks {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  pointer-events: none;
+}
+
+.progress-ticks span {
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-2);
+  font-weight: 500;
+}
+
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+
+.swatch {
+  width: 12px; height: 12px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.swatch--pending {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+
+.swatch--done {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.swatch--rest {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--surface-2),
+    var(--surface-2) 2px,
+    var(--border-soft) 2px,
+    var(--border-soft) 4px
+  );
+}
+
+button:focus-visible, .day:focus-visible {
+  outline: 3px solid var(--accent-dim);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------
+   Phases
+   --------------------------------------------------------------- */
+
+.phase {
+  margin-top: 40px;
+}
+
+.phase-head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  column-gap: 14px;
+  row-gap: 8px;
+  margin-bottom: 16px;
+}
+
+.phase-name {
+  font-size: 15px;
+  margin: 0;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.phase-range {
+  font-size: 12px;
+  color: var(--text-3);
+  justify-self: end;
+  font-weight: 500;
+}
+
+.phase-bar {
+  grid-column: 1 / -1;
+  height: 3px;
+  background: var(--border-soft);
+  border-radius: 100px;
+}
+
+.phase-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.6s ease;
+  border-radius: 100px;
+}
+
+.weeks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+/* ---------------------------------------------------------------
+   Week cards
+   --------------------------------------------------------------- */
+
+.week-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 14px 16px 16px;
+  border-radius: var(--radius-sm);
+  transition: box-shadow 0.2s ease, border-color 0.3s ease, background-color 0.5s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  overflow: hidden;
+}
+
+.week-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.week-card.is-complete {
+  border-color: var(--green-dim);
+  background: linear-gradient(180deg, rgba(52, 199, 89, 0.02), var(--surface));
+}
+
+/* Current week highlight — subtle left accent border */
+.week-card.is-current {
+  border-color: var(--accent);
+  box-shadow: var(--shadow), inset 3px 0 0 var(--accent);
+}
+
+.week-card.is-current .week-num {
+  color: var(--accent);
+}
+
+.week-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.week-num {
+  font-size: 12px;
+  color: var(--text-2);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.week-status {
+  font-size: 11px;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+.week-card.is-complete .week-status {
+  color: var(--green);
+}
+
+.week-card.is-current .week-status {
+  color: var(--accent);
+}
+
+/* ---------------------------------------------------------------
+   Day cells
+   --------------------------------------------------------------- */
+
+.days-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.day {
+  min-width: 0;
+  padding: 6px 2px;
+  border: 1.5px solid var(--border);
+  background: var(--surface-2);
+  border-radius: var(--radius-xs);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  gap: 2px;
+  position: relative;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  user-select: none;
+}
+
+.day:hover {
+  border-color: var(--accent-dim);
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.day:active { transform: scale(0.96); }
+
+.day .glyph { font-size: 13px; line-height: 1; color: inherit; }
+
+.day.is-done {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+.day.is-done:hover {
+  background: #2db84e;
+  border-color: #2db84e;
+  color: #fff;
+}
+
+.day.is-done .glyph { color: #fff; }
+
+.day.is-rest {
+  cursor: default;
+  background: var(--surface-2);
+  border-style: dashed;
+  border-color: var(--border);
+  color: var(--text-3);
+}
+
+.day.is-rest:hover {
+  border-color: var(--border);
+  color: var(--text-3);
+  transform: none;
+  background: var(--surface-2);
+}
+
+/* Completion pulse */
+@keyframes clearPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(52, 199, 89, 0.4); }
+  100% { box-shadow: 0 0 0 8px rgba(52, 199, 89, 0); }
+}
+
+.day.is-done.just-cleared { animation: clearPulse 0.5s ease-out; }
+
+/* ---------------------------------------------------------------
+   Toast notifications
+   --------------------------------------------------------------- */
+
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  pointer-events: none;
+}
+
+.toast {
+  background: var(--surface);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transform: translateY(12px);
+  animation: toastIn 0.3s ease forwards;
+  pointer-events: auto;
+}
+
+.toast.is-error {
+  color: var(--danger);
+  border-color: rgba(255, 59, 48, 0.2);
+}
+
+.toast.is-leaving {
+  animation: toastOut 0.3s ease forwards;
+}
+
+@keyframes toastIn {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toastOut {
+  to { opacity: 0; transform: translateY(12px); }
+}
+
+/* ---------------------------------------------------------------
+   Reduced motion + responsive
+   --------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0s !important;
+    animation-duration: 0s !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .legend { gap: 12px; }
+}

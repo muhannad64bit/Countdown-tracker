@@ -1,0 +1,1716 @@
+{
+  "meta": {
+    "totalWeeks": 35,
+    "workDaysPerWeek": 6,
+    "totalWorkDays": 210,
+    "createdAt": "2026-09-21T02:34:05.317Z"
+  },
+  "phases": [
+    {
+      "id": 1,
+      "name": "PHASE 01 — IGNITION",
+      "weekStart": 1,
+      "weekEnd": 9
+    },
+    {
+      "id": 2,
+      "name": "PHASE 02 — MOMENTUM",
+      "weekStart": 10,
+      "weekEnd": 18
+    },
+    {
+      "id": 3,
+      "name": "PHASE 03 — PRESSURE",
+      "weekStart": 19,
+      "weekEnd": 27
+    },
+    {
+      "id": 4,
+      "name": "PHASE 04 — ENDGAME",
+      "weekStart": 28,
+      "weekEnd": 35
+    }
+  ],
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "phaseId": 1,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 13,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 14,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 15,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 16,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 17,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 18,
+      "phaseId": 2,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 19,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 20,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 21,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 22,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 23,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 24,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 25,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 26,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 27,
+      "phaseId": 3,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 28,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 29,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 30,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 31,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 32,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 33,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 34,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "weekNumber": 35,
+      "phaseId": 4,
+      "days": [
+        {
+          "index": 0,
+          "label": "SAT",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 1,
+          "label": "SUN",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 2,
+          "label": "MON",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 3,
+          "label": "TUE",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 4,
+          "label": "WED",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 5,
+          "label": "THU",
+          "type": "work",
+          "status": "pending"
+        },
+        {
+          "index": 6,
+          "label": "FRI",
+          "type": "rest",
+          "status": "pending"
+        }
+      ]
+    }
+  ]
+}

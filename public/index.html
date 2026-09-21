@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OPERATION LOGBOOK — 35 Week Tracker</title>
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrap">
+
+    <header class="dossier-header">
+      <div class="header-top">
+        <span class="tag" id="milestone">CLASSIFIED · PERSONAL OPS</span>
+        <span class="tag tag--live" id="clock">-- : -- : --</span>
+      </div>
+
+      <p class="subhead" id="subhead">8-month campaign · 35 weeks · 6 duty days + 1 safehouse per week</p>
+
+      <div class="stat-row">
+        <div class="stat-block">
+          <span class="stat-value" id="statPercent">0%</span>
+          <span class="stat-label">Campaign complete</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" id="statDaysDone">0</span>
+          <span class="stat-label">Duty days logged</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" id="statDaysLeft">--</span>
+          <span class="stat-label">Duty days remaining</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" id="statWeek">--</span>
+          <span class="stat-label">Weeks fully cleared</span>
+        </div>
+      </div>
+
+      <div class="progress-shell" role="progressbar" aria-label="Campaign progress"
+           aria-valuemin="0" aria-valuemax="100" id="progressBar" aria-valuenow="0">
+        <div class="progress-fill" id="progressFill" style="width:0%"></div>
+        <div class="progress-ticks" id="progressTicks" aria-hidden="true"></div>
+      </div>
+
+      <div class="legend">
+        <span><i class="swatch swatch--pending"></i> Pending</span>
+        <span><i class="swatch swatch--done"></i> Cleared</span>
+        <span><i class="swatch swatch--rest"></i> Safehouse (Fri)</span>
+      </div>
+    </header>
+
+    <main id="phases" aria-live="polite">
+      <!-- Phase sections injected by app.js -->
+    </main>
+
+  </div>
+
+  <!-- Toast notifications for errors -->
+  <div class="toast-container" id="toastContainer" aria-live="assertive"></div>
+
+  <template id="phaseTemplate">
+    <section class="phase">
+      <div class="phase-head">
+        <h2 class="phase-name"></h2>
+        <span class="phase-range"></span>
+        <div class="phase-bar"><div class="phase-bar-fill"></div></div>
+      </div>
+      <div class="weeks-grid"></div>
+    </section>
+  </template>
+
+  <template id="weekTemplate">
+    <article class="week-card">
+      <div class="week-head">
+        <span class="week-num"></span>
+        <span class="week-status"></span>
+      </div>
+      <div class="days-row"></div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
