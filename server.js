@@ -365,183 +365,26 @@ function loginPage(error = '') {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Access</title>
+  <title>Welcome back — Day by day</title>
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      height: 100%;
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      -webkit-font-smoothing: antialiased;
-      background: #000000;
-      color: #ffffff;
-    }
-
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    /* Ambient black background with subtle dark motion */
-    .bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      background: #000000;
-      overflow: hidden;
-    }
-
-    .bg::before, .bg::after {
-      content: '';
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(90px);
-      pointer-events: none;
-    }
-
-    .bg::before {
-      width: 520px;
-      height: 520px;
-      background: radial-gradient(circle, rgba(55, 65, 81, 0.28) 0%, rgba(15, 23, 42, 0.05) 70%, transparent 100%);
-      top: 15%;
-      left: 20%;
-      animation: floatMotion1 16s ease-in-out infinite alternate;
-    }
-
-    .bg::after {
-      width: 480px;
-      height: 480px;
-      background: radial-gradient(circle, rgba(30, 41, 59, 0.35) 0%, rgba(17, 24, 39, 0.05) 70%, transparent 100%);
-      bottom: 15%;
-      right: 20%;
-      animation: floatMotion2 20s ease-in-out infinite alternate;
-    }
-
-    .bg-mesh {
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 60%);
-      animation: pulseGlow 10s ease-in-out infinite alternate;
-    }
-
-    @keyframes floatMotion1 {
-      0% { transform: translate(-30px, -20px) scale(1); }
-      50% { transform: translate(40px, 30px) scale(1.08); }
-      100% { transform: translate(10px, -35px) scale(0.95); }
-    }
-
-    @keyframes floatMotion2 {
-      0% { transform: translate(25px, 20px) scale(1); }
-      50% { transform: translate(-35px, -25px) scale(1.1); }
-      100% { transform: translate(-10px, 30px) scale(0.92); }
-    }
-
-    @keyframes pulseGlow {
-      0% { opacity: 0.35; transform: scale(0.96); }
-      100% { opacity: 0.75; transform: scale(1.04); }
-    }
-
-    /* Minimalist Apple-style dark glass card */
-    .glass {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      max-width: 320px;
-      padding: 36px 28px;
-      background: rgba(18, 18, 20, 0.65);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 22px;
-      backdrop-filter: blur(36px) saturate(1.4);
-      -webkit-backdrop-filter: blur(36px) saturate(1.4);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.04) inset;
-      text-align: center;
-    }
-
-    .input-field {
-      width: 100%;
-      padding: 16px;
-      font-size: 19px;
-      font-family: inherit;
-      font-weight: 600;
-      letter-spacing: 0.3em;
-      text-align: center;
-      color: #ffffff;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 14px;
-      outline: none;
-      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-      -webkit-appearance: none;
-    }
-
-    .input-field::placeholder {
-      color: rgba(255, 255, 255, 0.22);
-      letter-spacing: 0.35em;
-    }
-
-    .input-field:focus {
-      border-color: rgba(255, 255, 255, 0.28);
-      background: rgba(255, 255, 255, 0.08);
-      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
-    }
-
-    .input-field.has-error {
-      border-color: rgba(255, 69, 58, 0.7);
-      animation: shake 0.4s ease;
-    }
-
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      20% { transform: translateX(-7px); }
-      40% { transform: translateX(7px); }
-      60% { transform: translateX(-4px); }
-      80% { transform: translateX(4px); }
-    }
-
-    .submit-btn {
-      width: 100%;
-      padding: 14px;
-      margin-top: 14px;
-      font-size: 15px;
-      font-weight: 500;
-      letter-spacing: -0.01em;
-      font-family: inherit;
-      color: #000000;
-      background: #ffffff;
-      border: none;
-      border-radius: 13px;
-      cursor: pointer;
-      transition: opacity 0.2s ease, transform 0.1s ease;
-    }
-
-    .submit-btn:hover {
-      opacity: 0.92;
-    }
-
-    .submit-btn:active {
-      transform: scale(0.98);
-    }
-
-    .error-msg {
-      color: #ff453a;
-      font-size: 13px;
-      font-weight: 500;
-      margin-top: 14px;
-      min-height: 18px;
-      opacity: ${error ? '1' : '0'};
-      transition: opacity 0.3s ease;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .bg::before, .bg::after, .bg-mesh { animation: none; }
-      .input-field.has-error { animation: none; }
-    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100svh; padding: 24px; display: grid; place-items: center; font-family: 'Inter', sans-serif; background: #f5f6f2; color: #263c32; -webkit-font-smoothing: antialiased; }
+    .bg { display: none; }
+    .glass { width: min(100%, 380px); padding: 40px 32px; border-radius: 36px; background: #e4edde; text-align: center; }
+    .brand-mark { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #426951; color: white; font-size: 28px; }
+    h1 { font-size: 28px; font-weight: 500; letter-spacing: -1px; margin: 24px 0 8px; }
+    .intro { font-size: 13px; color: #68786e; margin: 0 0 28px; line-height: 1.7; }
+    label { display: block; text-align: left; font-size: 12px; margin: 0 0 8px 16px; }
+    .input-field { width: 100%; border: 0; border-radius: 100px; padding: 17px; text-align: center; font: inherit; letter-spacing: .3em; background: #fff; color: #263c32; }
+    .submit-btn { width: 100%; border: 0; border-radius: 100px; padding: 17px; margin-top: 12px; background: #426951; color: white; font: inherit; font-size: 13px; cursor: pointer; transition: background .2s; }
+    .submit-btn:hover { background: #335540; }
+    :focus-visible { outline: 3px solid #8aa780; outline-offset: 4px; }
+    .error-msg { color: #844d42; font-size: 12px; line-height: 1.5; }
+    .error-msg:empty { display: none; }
   </style>
 </head>
 <body>
@@ -549,10 +392,15 @@ function loginPage(error = '') {
     <div class="bg-mesh"></div>
   </div>
   <form class="glass" method="POST" action="/login">
+    <span class="brand-mark" aria-hidden="true">↗</span>
+    <h1>A little closer, every day.</h1>
+    <p class="intro">Your journey is right where you left it.<br>Enter your code to continue.</p>
+    <label for="password">Access code</label>
     <input
       class="input-field${error ? ' has-error' : ''}"
       type="password"
       name="password"
+      id="password"
       inputmode="numeric"
       pattern="[0-9]*"
       autocomplete="current-password"
@@ -560,8 +408,8 @@ function loginPage(error = '') {
       autofocus
       required
     >
-    <button class="submit-btn" type="submit">Unlock</button>
-    <p class="error-msg">${error}</p>
+    <button class="submit-btn" type="submit">Continue your journey</button>
+    <p class="error-msg" role="alert">${error}</p>
   </form>
 </body>
 </html>`;
@@ -582,7 +430,7 @@ function blockedPage() {
       height: 100%;
       font-family: 'Inter', -apple-system, sans-serif;
       -webkit-font-smoothing: antialiased;
-      background: #0f0f11;
+      background: #f5f6f2;
       color: #fff;
       display: flex;
       align-items: center;
@@ -600,11 +448,11 @@ function blockedPage() {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 8px;
-      color: #ff6b6b;
+      color: #844d42;
     }
     .blocked p {
       font-size: 14px;
-      color: rgba(255,255,255,0.5);
+      color: #68786e;
       max-width: 300px;
     }
   </style>
